@@ -23,10 +23,6 @@ export DEBIAN_FRONTEND=noninteractive
 export TZ=Asia/Kolkata
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-cat >>/etc/apt/sources.list <<EOF
-deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main
-EOF
-
 apt-get update && apt upgrade -y 
 apt-get install -y --no-install-recommends \
     coreutils \
