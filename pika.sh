@@ -52,6 +52,7 @@ apt-get install -y --no-install-recommends \
     musl \
     libcurl4-openssl-dev \
     postgresql \
+    libmysqlclient-dev \
     postgresql-client \
     postgresql-server-dev-all \
     openssl \
